@@ -35,22 +35,22 @@
         <!-- Menu de navegação dentro do cabeçalho(header) -->
         <nav id="header-nav">  
 
-            <a href="" class="header-nav-a">
+            <a href="#header-nav" class="header-nav-a">
                 <i class="fa-solid fa-star"></i>
                 <span>Home</span>
             </a>
     
-            <a href="" class="header-nav-a">
+            <a href="#servicos" class="header-nav-a">
                 <i class="fa-solid fa-code"></i>
                 <span>Serviços</span>
             </a>
     
-            <a href="" class="header-nav-a">
+            <a href="#equipe" class="header-nav-a">
                 <i class="fa-solid fa-circle-info"></i>
                 <span>Sobre</span>
             </a>
     
-            <a href="" class="header-nav-a">
+            <a href="#contato" class="header-nav-a">
                 <i class="fa-solid fa-envelope"></i>
                 <span>Contato</span>
             </a>
@@ -200,6 +200,7 @@
                     <img src="assets/img/equipe-01.jpg" alt="Foto de Lucas Andrade">
                     
                     <div class="profissional-texto">
+                        <style></style>
                         <h3>Lucas Andrade</h3>
                         <h4>Desenvolvedor Full Stack</h4>
                         <p>
@@ -307,23 +308,68 @@
                     </div>
                 </div>
             </div>
-
         </section>
-    </main>
+        
+        <!-- Área para contato-->
+        <section id="contato">
+            <h2>Entre em contato</h2>
+            <form action="">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
 
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+
+                <label for="assunto">Assunto</label>
+                <input type="text" name="assunto" id="assunto">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+                <input type="submit" value="enviar">
+            </form>
+        </section>
+
+        <div id="topo">
+            <a href="#header-nav" class="">
+                <i class="fa-solid fa-jet-fighter-up"></i>
+            </a>
+        </div>
+
+    </main>
+    
+    <!-- Ícone do WhatsApp -->
     <div id="whatsapp">
         <a href="">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
-        <!-- Ícone do WhatsApp -->
     </div>
-
-    <br><br><br><br><br><br><br>
+    
     <footer>
-        <div id="footer-container-texto">
-            <p>Feito com ☕ por Pablo Martins</p><br>
-        </div>
+        <section id="desenvolvedor">
+            <img src="assets/img/meu_logo.svg" alt=""> 
+            <div id="desenvolvedor-identificacao">
+                <p>Feito com ☕ por</p> 
+                <h3>Pablo Martins &reg;</h3>
+            </div>
+        </section>
+
+        <section id="desenvolvedor-servicos">
+            <ul>
+                <li>Desenvolvimento de Sites Responsivos</li>
+                <li>Design de Interface de Usuário (UI)</li> 
+                <li>Otimização para SEO</li>
+                <li>Criação de Identidade Visual</li>
+                <li>Manutenção de Sites e Atualizações</li> 
+            </ul>
+        </section>
+
+        <!-- Seção com links para as redes sociais -->
+        <section id="redessociais">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a> 
+        </section>
     </footer>
 </body>
-
 </html>
